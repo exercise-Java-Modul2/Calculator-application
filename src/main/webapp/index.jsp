@@ -7,10 +7,41 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>Simple Calculater</title>
+    <style type="text/css">
+        .content {
+            height: 300px;
+            width: 500px;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>Simple Calculater</h1>
+    <form method="post" action="simple_calculater">
+        <div id="data">
+            <table>
+                <tr>
+                    <td>First operand:</td>
+                    <td><input type="text" name="firstnumber" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Operator:</td>
+                    <td><input type="text" name="operator" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Second operand:</td>
+                    <td><input type="text" name="secondnumber" size="30"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Calculate"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
+</body>
 </html>
